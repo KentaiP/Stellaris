@@ -1,0 +1,17 @@
+﻿###########################
+###   Psychic Energy    ###
+###########################
+
+# Psychic Energy
+sr_minedpsychicenergy = {
+	AI_category = strategic_resource
+	prerequisites = { "tech_telepathic_datamining" }
+	tradable = yes
+	is_rare = yes
+	is_global = yes
+	
+	modifier = {
+		category_psionics_research_speed_mult = 0.20
+	}
+	
+}

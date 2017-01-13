@@ -1,0 +1,60 @@
+# Possible Deposit Variables
+# modifier - weight, will replace the weight value
+# modifier - factor, will multiply the weight value
+# resources, resource and amount
+# station = station class in orbit to gather
+# if you mix resources that are not supposed to be collected by an orbital station remember to put is_orbital_slot = no
+
+
+#######################################
+######### STRATEGIC RESOURCES #########
+#######################################
+
+#################
+# Non-clustered #
+#################
+
+d_psychic_energy_deposit = {
+	resources = { 
+		sr_minedpsychicenergy = 1
+	}
+	station = shipclass_research_station
+    orbital_weight = {
+		weight = 300
+	}
+	
+	drop_weight = {
+		weight = 500
+		modifier = {
+ 		    weight = 5000000
+			planet = {				
+					   has_ring = yes 	
+			}
+		}
+		modifier = {
+			factor = 3
+			planet = {
+				OR = {
+					has_deposit = "d_rich_society_deposit"
+					has_deposit = "d_vast_society_deposit"
+				}
+			}
+		}
+	}
+}
+
+d_powerful_psychic_energy_deposit = {
+	resources = { 
+		society_research = 6
+		sr_minedpsychicenergy = 2
+	}
+	station = shipclass_research_station
+
+	orbital_weight = {
+		weight = 300
+	}
+	
+	drop_weight = {
+		weight = 0.5
+	}
+}
