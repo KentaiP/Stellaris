@@ -3,7 +3,7 @@
 ###########################
 
 # Psychic Energy
-sr_minedpsychicenergy = {
+sr_psychic_energy = {
 	AI_category = strategic_resource
 	prerequisites = { "tech_telepathic_datamining" }
 	tradable = yes

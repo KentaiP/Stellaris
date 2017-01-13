@@ -67,7 +67,7 @@ tech_telepathic_datamining = {
 		   factor = 0
 		   NOR = {
 			any_system_within_border = {
-			 has_strategic_resource = "sr_minedpsychicenergy" 
+			 has_strategic_resource = "sr_psychic_energy" 
 			}
 			any_country = {
 			 AND = {

@@ -16,7 +16,7 @@
 
 d_psychic_energy_deposit = {
 	resources = { 
-		sr_minedpsychicenergy = 1
+		sr_psychic_energy = 1
 	}
 	station = shipclass_research_station
     orbital_weight = {
