@@ -19,20 +19,19 @@ d_psychic_energy_deposit = {
 		sr_psychic_energy = 1
 	}
 	station = shipclass_research_station
-    orbital_weight = {
-		weight = 300
-	}
+    is_orbital_slot = yes
+	orbital_weight = { weight = 1000 }
 	
 	drop_weight = {
-		weight = 500
+		weight = 0
 		modifier = {
- 		    weight = 5000000
+ 		    weight = 5
 			planet = {				
-					   has_ring = yes 	
+					   is_planet_class = pc_gas_giant	
 			}
 		}
 		modifier = {
-			factor = 3
+			factor = 300
 			planet = {
 				OR = {
 					has_deposit = "d_rich_society_deposit"
@@ -50,11 +49,20 @@ d_powerful_psychic_energy_deposit = {
 	}
 	station = shipclass_research_station
 
-	orbital_weight = {
-		weight = 300
-	}
+	orbital_weight = { weight = 1000 }
 	
 	drop_weight = {
-		weight = 0.5
+		weight = 0
+		modifier = {
+ 		    weight = 0.5
+			planet = {	
+					AND = {
+  					   is_planet_class = pc_gas_giant	
+					   NOT {
+					   has_deposit = "d_psychic_energy_deposit"  
+					   }
+					   }
+			}
+		}
 	}
 }
