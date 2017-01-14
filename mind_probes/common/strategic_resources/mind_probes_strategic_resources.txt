@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 ###   Psychic Energy    ###
 ###########################
 
@@ -13,5 +13,4 @@ sr_psychic_energy = {
 	modifier = {
 		category_psionics_research_speed_mult = 0.20
 	}
-	
 }
