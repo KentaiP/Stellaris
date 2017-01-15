@@ -1,0 +1,402 @@
+guiTypes = {
+    # Spaceport Panel Module Buildables
+	containerWindowType = {
+		name = "planet_view_modules_panel_buildables"
+		size = { width = 328 height = 100 }
+		show_sound = "planet_view_menu_slide"
+
+		background = {
+			name = "orbitals_background"
+			spriteType = "GFX_tiles_frame"
+		}
+
+		smoothListBoxType = {
+			name = "entries"
+			position = { x = 5 y = 5 }
+			orientation = upper_left
+			size = { x = 307 y = 90 }
+			borderSize = { x = 0 y = 0 }
+			scrollbartype = "standardlistbox_slider"
+			autohide_scrollbar = no
+			spacing = 4
+		}
+	}
+
+	# Spaceport Panel Module Buildables Entry
+	containerWindowType = {
+		name = "planet_view_modules_panel_buildables_entry"
+		size = { width = 306 height = 30 }
+
+		background = {
+			name = "orbitals_background"
+			position = { x = -12 y = -12 }
+			quadTextureSprite = "GFX_tinyfy_ui_module_button"
+			#spriteType = "GFX_tiles_frame"
+			clicksound = queing_spaceport_module
+		}
+
+		iconType = {
+			name = "icon"
+			spriteType = "GFX_spaceport_modules"
+			position = { x = 1 y = 2 }
+			scale = 0.46
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType={
+			name = "name"
+			font = "cg_16b"
+			text = "NAME"
+			position = { x = 34 y = 6 }
+			orientation = upper_left
+			maxWidth = 200
+			maxHeight = 24
+			fixedSize = yes
+			format = left
+			alwaysTransparent = yes
+			text_color_code = "H"
+		}
+
+		instantTextBoxType={
+			name = "desc"
+			font = "cg_16b"
+			text = "DESC"
+			position = { x = 144 y = 6 }
+			orientation = upper_left
+			maxWidth = 156
+			maxHeight = 24
+			fixedSize = yes
+			format = right
+			alwaysTransparent = yes
+		}
+
+		iconType = {
+			name = "missing_resources"
+			orientation = UPPER_RIGHT
+			position = { x = -38 y = 6 }
+			spriteType = "GFX_missing_resources_icon"
+		}
+	}
+    
+    containerWindowType = {
+		name = "planet_view_tile_construction_panel_module_list"
+		size = { width = 335 height = 400 }
+		show_sound = "planet_view_menu_slide"
+
+		smoothListboxType = {
+			name = "modular_content"
+			position = { x = 0 y = 0 }
+			background = ""
+			size = { x = 335 y = 400 }
+			scrollbarType = "standardlistbox_slider"
+			borderSize = { x = 0 y = 0 }
+			orientation = "UPPER_LEFT"
+			autohide_scrollbar = yes
+			spacing = -8
+		}
+	}
+
+	containerWindowType = {
+		name = "planet_view_tile_construction_panel_module_list_entry"
+		size = { width = 335 height = 48 }
+		show_sound = "planet_view_menu_slide"
+
+		background = {
+			name = "planet_bg"
+			position = { x = -6 y = -6 }
+			quadTextureSprite = "GFX_tinyfy_ui_building_button"
+		}
+
+		# HIDDEN (out of screen)
+		iconType = {
+			name = "building_bg"
+			spriteType = "GFX_building_bg"
+			position = { x = -1000 y = -1000 }
+			scale = 0.4
+			alwaysTransparent = yes
+		}
+
+		iconType = {
+			name = "icon"
+			spriteType = "GFX_building"
+			position = { x = -2 y = 6 }
+			scale = 0.4
+			alwaysTransparent = yes
+		}
+
+		# Building Output
+
+		overlappingElementsBoxType = {
+			name = "output_box"
+			size = { x = 96 y = 0 }
+			position = { x = 42 y = 12 }
+			orientation = upper_left
+			spacing = -2
+			format = left
+		}
+
+		instantTextBoxType = {
+			name = "name"
+			font = "cg_16b"
+			text = "TILE_DESC"
+			position = { x = 98 y = 15 }
+			maxWidth = 214
+			maxHeight = 40
+			fixedSize = yes
+			format = right
+			orientation = upper_left
+			alwaysTransparent = no
+			text_color_code = "H"
+		}
+
+		# HIDDEN (out of screen)
+		# cost shown in tooltip
+		instantTextBoxType = {
+			name = "cost"
+			font = "cg_16b"
+			text = ""
+			position = { x = -1000 y = -1000 }
+			maxWidth = 5
+			maxHeight = 5
+			fixedSize = yes
+			format = centre
+			orientation = upper_left
+		}
+
+		iconType = {
+			name = "missing_resources"
+			orientation = UPPER_RIGHT
+			position = { x = -38 y = 9 }
+			spriteType = "GFX_missing_resources_icon"
+		}
+
+		iconType = {
+			name = "missing_maintenance"
+			orientation = UPPER_RIGHT
+			position = { x = -38 y = 9 }
+			spriteType = "GFX_failure_risk_icon"
+		}
+	}
+    
+    containerWindowType = {
+		name = "planet_view_spaceport_construction_panel_entry"
+		size = { width = 328 height = 32 }
+
+
+		background = {
+			name = "planet_view_spaceport_construction_panel_entry_background"
+			quadTextureSprite = "GFX_interface_list_light"
+		}
+
+		iconType = {
+			name = "ship_type"
+			position = { x = 4 y = 4 }
+			spriteType = "GFX_ship_class_medium"
+			alwaysTransparent = yes
+			scale = 0.7
+		}
+
+		instantTextBoxType = {
+			name = "name"
+			font = "cg_16b"
+			text = "NAME"
+			position = { x = 30 y = 1 }
+			maxWidth = 328
+			maxHeight = 20
+			fixedSize = yes
+			format = left
+			orientation = upper_left
+			alwaysTransparent = yes
+			text_color_code = "H"
+		}
+
+		instantTextBoxType = {
+			name = "cost"
+			font = "cg_16b"
+			text = "COST"
+			position = { x = -70 y = 1 }
+			maxWidth = 60
+			maxHeight = 20
+			fixedSize = yes
+			format = right
+			orientation = upper_right
+		}
+
+
+		instantTextBoxType = {
+			name = "type"
+			font = "cg_16b"
+			text = "TYPE"
+			position = { x = 30 y = 14 }
+			maxWidth = 230
+			maxHeight = 20
+			fixedSize = yes
+			format = left
+			orientation = upper_left
+			alwaysTransparent = yes
+			text_color_code = "E"
+		}
+
+		instantTextBoxType = {
+			name = "auto_gen"
+			font = "cg_16b"
+			text = "AUTO_GENERATED_BEST"
+			position = { x = -265 y = 1 }
+			maxWidth = 200
+			maxHeight = 20
+			fixedSize = yes
+			format = right
+			orientation = upper_right
+			alwaystransparent = yes
+			text_color_code = "E"
+		}
+
+		instantTextBoxType = {
+			name = "time"
+			font = "cg_16b"
+			text = "TIME"
+			position = { x = -70 y = 14 }
+			maxWidth = 60
+			maxHeight = 20
+			fixedSize = yes
+			format = right
+			orientation = upper_right
+		}
+	}
+
+	# Left side armies already recruited on planet
+	containerWindowType = {
+		name = "planet_view_module_armies_current_entry"
+		size = { width = 220 height = 32 }
+
+		background = {
+			name = "armies_current_entry_background"
+			quadTextureSprite = "GFX_interface_list_light"
+			clicksound = click_army_select
+		}
+
+		iconType = {
+			name = "army_icon"
+			spriteType = "GFX_army_icons"
+			position = { x = 0 y = 0 }
+			frame = 2
+			scale = 0.9
+			alwaysTransparent = yes
+		}
+
+		iconType = {
+			name = "leader"
+			spriteType = "GFX_army_info_leader"
+			position = { x = 202 y = 3 }
+		}
+
+		instantTextBoxType = {
+			name = "name"
+			font = "cg_16b"
+			position = { x = 30 y = 1 }
+			maxWidth = 170
+			maxHeight = 16
+			fixedSize = yes
+			format = LEFT
+			alwaysTransparent = yes
+			text_color_code = "H"
+		}
+
+		instantTextBoxType = {
+			name = "type"
+			font = "cg_16b"
+			position = { x = 30 y = 14 }
+			maxWidth = 390
+			maxHeight = 20
+			fixedSize = yes
+			format = left
+			orientation = upper_left
+			alwaysTransparent = yes
+			text_color_code = "E"
+		}
+
+		instantTextBoxType = {
+			name = "species"
+			font = "cg_16b"
+			text = "Species"
+			position = { x = -188 y = 14 }
+			maxWidth = 180
+			maxHeight = 20
+			fixedSize = yes
+			format = right
+			orientation = upper_right
+			alwaysTransparent = yes
+			text_color_code = "E"
+		}
+	}
+
+	# Recruitment area list items
+	containerWindowType = {
+		name = "planet_view_recruitment_panel_entry"
+		size = { width = 335 height = 32 }
+
+		background = {
+			name = "recruitment_panel_entry_background"
+			quadTextureSprite = "GFX_interface_list_light"
+		}
+
+		iconType = {
+			name = "army_icon"
+			spriteType = "GFX_army_icons"
+			position = { x = 0 y = 0 }
+			frame = 2
+			scale = 0.9
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "type"
+			font = "cg_16b"
+			position = { x = 30 y = 1 }
+			maxWidth = 390
+			maxHeight = 20
+			fixedSize = yes
+			format = left
+			orientation = upper_left
+			alwaysTransparent = yes
+			text_color_code = "H"
+		}
+
+		instantTextBoxType = {
+			name = "species"
+			font = "cg_16b"
+			position = { x = 30 y = 14 }
+			maxWidth = 390
+			maxHeight = 20
+			fixedSize = yes
+			format = left
+			orientation = upper_left
+			alwaysTransparent = yes
+			text_color_code = "E"
+		}
+
+		instantTextBoxType = {
+			name = "time"
+			font = "cg_16b"
+			position = { x = -70 y = 14 }
+			maxWidth = 60
+			maxHeight = 20
+			fixedSize = yes
+			format = right
+			orientation = upper_right
+		}
+
+		instantTextBoxType = {
+			name = "cost"
+			font = "cg_16b"
+			text = "COST"
+			position = { x = -110 y = 1 }
+			maxWidth = 100
+			maxHeight = 20
+			fixedSize = yes
+			format = right
+			orientation = upper_right
+		}
+	}
+
+}
