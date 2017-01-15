@@ -9,7 +9,7 @@
 
 
 psionic_spacetime_plexer = {
-	icon = "GFX_psionic_spacetime_plexer"
+	icon = "GFX_spaceport_module_psionic_spacetime_plexer"
 	section = "SCIENCE_SPACEPORT_SECTION"
 	construction_days = 720
 	prerequisites = { "tech_psionic_entanglement" }
