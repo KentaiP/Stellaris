@@ -9,8 +9,5 @@ sr_psychic_energy = {
 	tradable = yes
 	is_rare = yes
 	is_global = yes
-	
-	modifier = {
-		category_psionics_research_speed_mult = 0.20
-	}
+
 }

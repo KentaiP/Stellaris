@@ -92,3 +92,41 @@ tech_telepathic_datamining = {
 		}
 	}
 }
+
+#Psionic Entanglement
+tech_psionic_entanglement = {
+	cost = @tier3cost2
+	area = society
+	tier = 3
+	is_rare = yes
+	is_dangerous = yes
+	category = { psionics }	
+	prerequisites = { "tech_telepathic_datamining" }
+	weight = @tier2weight1
+	
+	weight_modifier = {
+		
+		modifier = {
+			factor = 3
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+			
+		modifier = {
+			factor = 3
+			has_edict = "mental_awakening"			
+		}
+		
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 5
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_psionics"
+			}
+		}
+	}
+}

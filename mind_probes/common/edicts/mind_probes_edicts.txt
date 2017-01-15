@@ -1,0 +1,29 @@
+##########################################################################
+# Empire edicts
+##########################################################################
+
+country_edict = {
+	name = "mental_awakening"
+	modifier = {
+		species_leader_exp_gain = 0.15
+		leader_age = 15
+        category_psionics_research_speed_mult = 0.5
+	}
+	
+	influence_cost = 2.5
+	
+    policy_flags = {
+			mental_awakening
+		}
+	
+	allow = {
+	}
+	
+	ai_weight = {
+		weight = 1
+	}	
+	
+	prerequisites = {
+		"tech_telepathic_datamining"
+	}
+}

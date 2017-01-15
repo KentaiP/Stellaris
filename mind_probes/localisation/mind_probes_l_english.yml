@@ -3,8 +3,14 @@
  # Mind Probes
  ####################################
 sr_psychic_energy:0 "Psychic Energy"
-sr_psychic_energy_desc:0 "Sentient telepathic drones are placed into the orbit of living planetary rings which are made up of sentient crystalline formations in order to harness the large quantities of psychic energy being emitted. This psychic energy can be used to empower psions and enhance psionic technology."
+sr_psychic_energy_desc:0 "Sentient telepathic drones are placed into the orbit of gas giants that house colossal sentient gas clouds. In order to harness the large quantities of psychic energy being emitted, the sentient drones lock their orbit with the shifting of the clouds. The psychic energy that has been collected can be used to empower psions and enhance psionic technology."
 tech_telepathic_datamining:0 "Telepathic Data Mining"
 tech_telepathic_datamining_desc:0 "Integrating sentient AIs with psychic circuitry allows for the detection and collection of psychic energy. This psychic energy is emitted by every sentient creature, but usually only in very tiny field strengths."   
+tech_psionic_entanglement:0 "Psionic Entanglement"
+tech_psionic_entanglement_desc:0 "By focusing psychic energy into concentrated beams and fireing them at one point from different angles with sufficient power, a psychic singularity called 'Hyperpheneron' can be created, much in the way how light can be compounded into a kugelblitz black hole."
+edict_mental_awakening:0 "Mental Awakening"
+edict_mental_awakening_desc:0 "This Edict allows the distribution of collected telepathic energy, empowering your people's mental faculties and psionic factors.\n\n"
+sm_psionic_spacetime_plexer:0 "Psionic Space-Time Plexer"
+sm_psionic_spacetime_plexer_desc:0 "\nA looping stream of psychic energy is implemented around a sentient data core, forcing the intelligence of the machine to shift into a new meta-psychic-state that defines not only the machine but all machines built on the same principle and tuned to the same meta-particle (a hyperpheneron). This creates tiny exotic regions of space that do not follow ordinary physics, allowing for very unique types of research, but also endangering the surrounding structures and nearby spaceships."
 
 

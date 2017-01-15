@@ -17,6 +17,7 @@
 d_psychic_energy_deposit = {
 	resources = { 
 		sr_psychic_energy = 1
+		society_research = 1
 	}
 	station = shipclass_research_station
     is_orbital_slot = yes
@@ -25,7 +26,7 @@ d_psychic_energy_deposit = {
 	drop_weight = {
 		weight = 0
 		modifier = {
- 		    weight = 5
+ 		    weight = 19
 			planet = {				
 					   is_planet_class = pc_gas_giant	
 			}
@@ -45,23 +46,23 @@ d_psychic_energy_deposit = {
 d_powerful_psychic_energy_deposit = {
 	resources = { 
 		society_research = 6
-		sr_minedpsychicenergy = 2
-	}
+		sr_psychic_energy = 2
+	}	
 	station = shipclass_research_station
-
+    is_orbital_slot = yes
 	orbital_weight = { weight = 1000 }
 	
 	drop_weight = {
 		weight = 0
 		modifier = {
- 		    weight = 0.5
+ 		    weight = 4
 			planet = {	
-					AND = {
-  					   is_planet_class = pc_gas_giant	
-					   NOT {
-					   has_deposit = "d_psychic_energy_deposit"  
-					   }
-					   }
+                    AND = {			
+  					is_planet_class = pc_gas_giant	
+					NOT = {
+					has_deposit = "d_psychic_energy_deposit"
+					}
+					}
 			}
 		}
 	}
