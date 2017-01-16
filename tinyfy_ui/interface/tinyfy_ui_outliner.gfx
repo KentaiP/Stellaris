@@ -1,4 +1,15 @@
 spriteTypes = {
+
+	progressbarType = {
+		name = "GFX_tinyfy_ui_outliner_planet_construction_progressbar"
+		color = { 1.0 1.0 1.0 }
+		colorTwo = { 1.0 1.0 1.0 }
+		textureFile1 = "gfx/interface/progressbars/tinyfy_ui_outliner_progress_full.dds"
+		textureFile2 = "gfx/interface/progressbars/tinyfy_ui_outliner_progress_empty.dds"
+		size = { x = 8 y = 15 }
+		effectFile = "gfx/FX/tinyfy_ui_progress.lua"
+	}
+
 	progressbarType = {
 		name = "GFX_tinyfy_ui_outliner_planet_colonize_progressbar"
 		color = { 1.0 1.0 1.0 }
