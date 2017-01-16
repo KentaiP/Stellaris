@@ -1,5 +1,7 @@
 guiTypes = {
-    # Box which holds all small icons, one for each war
+    # Filename starts with 'z' to load after waroverview.gui
+
+	# Box which holds all small icons, one for each war
 	containerWindowType = {
 		name = "waricon_box"
 		position = { x = 75 y = 75 }
