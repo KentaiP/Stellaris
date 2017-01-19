@@ -1,0 +1,9 @@
+﻿l_english:
+ ####################################
+ # Flag Categories
+ ####################################
+  FLAG_CATEGORY_logos:0 "Logos"
+  FLAG_CATEGORY_sefins:0 "Sefin's Flags"
+  FLAG_CATEGORY_SMAC:0 "SMAC"
+  FLAG_CATEGORY_special:0 "Special"
+  FLAG_CATEGORY_warhammer40k:0 "Warhammer 40k"
