@@ -492,7 +492,7 @@ guiTypes = {
 
 			iconType = {
 				name = "progress"
-				position = { x = 116 y = 4 }
+				position = { x = 230 y = 1 }
 				spriteType = "GFX_tinyfy_ui_outliner_planet_colonize_progressbar"
 				frame = 50
 			}
